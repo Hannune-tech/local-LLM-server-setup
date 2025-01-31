@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Ubuntu 20.04 LTS or later
-- Root or sudo privileges
+- sudo privileges
 
 ## Steps
 
@@ -11,14 +11,13 @@
 
 
 ### 2. Identify Current IP Configuration
-`ifconfig | grep inet`
+`ip addr show`
 
 
 ### 3. Determine Network Interface and Gateway
-`route -n`
+`ip route show`
 
 Network interface could be `eth0`, `eth1`, `ens33`, ...
-
 
 
 ### 4. Edit Netplan Configuration(yaml)
@@ -30,22 +29,22 @@ Replace the content with:
 network:
     ethernets:
         ens33: # Replace with your network interface
-            addresses: [<your ip address>/24] # Replace with your desired IP
-            gateway4: 172.16.230.2 # Replace with your gateway
+            addresses: [192.168.0.50/24] # Replace with your desired IP
+            gateway4: 182.168.0.1 # Replace with your gateway
             nameservers:
-                addresses: [168.126.63.1,8.8.8.8] # DNS servers
+                addresses: [1.1.1.1,8.8.8.8] # DNS servers
     version: 2
 ```
 
 
 ### 5. Apply New Configuration
-sudo netplan apply
+`sudo netplan apply`
 
 
 ### 6. Verify New Configuration
 `ping yahoo.com`
 or 
-`ifconfig`
+`ip addr show`
 
 
 ## Notes
@@ -57,20 +56,4 @@ or
 - Ensure all network information is correct
 - Verify that the YAML file is properly formatted
 - Reboot the system if changes don't take effect immediately
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

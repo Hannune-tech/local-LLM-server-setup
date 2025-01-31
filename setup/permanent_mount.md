@@ -1,4 +1,4 @@
-# Permenantly mount drive(ssd, hdd) to ubuntu machine
+# Permanently mount drive(ssd, hdd) to ubuntu machine
 
 ## Steps
 
@@ -9,11 +9,11 @@
 
 1. `sudo blkid`
 2. if doesn't work
-    - `sudo fdisk /deb/<disk>`
+    - `sudo fdisk /dev/<disk>`
     - You can check for <disk> in `fdisk -l` 
-        - `sda`, `sdb`, ...
-    - g, n, w type
-    - sudo mkfs.ext4 /dev/sdd1
+        - `sda`, `sdb`, etc.
+    - Use the following commands in fdisk: `g`, `n`, `w`
+    - Then format the partition: `sudo mkfs.ext4 /dev/sdd1`
 
 ### 3. Check if it's mount
 `df -h`
@@ -30,4 +30,3 @@
 
 ### 6. Reboot
 `sudo reboot`
-

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides a comprehensive guide and setup scripts for configuring a personal server to run local Large Language Models (LLMs) and leverage other benefits like vector databases. The setup is designed to work with Docker containers, offering flexibility and ease of deployment.
+This repository provides a comprehensive guide and setup scripts for configuring a personal server to run local Large Language Models (LLMs) and utilize other features like vector databases. The setup is designed to work with Docker containers, offering flexibility and ease of deployment.
 
 ## Motivation
 
@@ -22,13 +22,14 @@ Before using this repository, ensure you have the following:
 1. A server with a Linux operating system (Ubuntu 22.04 recommended)
 2. Internet connection
 3. Properly configured router for network access
+4. Basic knowledge of Linux command line and Docker
 
 ## Features
 
-- Automated server setup scripts
+- Server setup scripts
 - Docker configuration for containerized applications
 - GPU support for NVIDIA and AMD graphics cards
-- Deploy local LLM server with open source LLMs
+- Deploy a local LLM server with open source LLMs
 - Vector database setup for efficient data storage and retrieval
 
 ## Directory Structure

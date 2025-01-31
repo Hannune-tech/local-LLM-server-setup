@@ -1,5 +1,5 @@
 # ollama
-Run ollama server in container
+Deploying Ollama LLM Server in Docker
 
 
 ## Nvidia
@@ -14,17 +14,4 @@ Run ollama server in container
 2. `ollama pull <model>`
     - list of models can be found [here](https://ollama.com/search)
     - e.g. `ollama pull deepseek-r1:8b-llama-distill-q8_0`
-
-
-
-
-
-
-
-
-
-
-
-
-
 
