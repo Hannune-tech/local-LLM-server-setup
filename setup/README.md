@@ -13,6 +13,4 @@ A properly configured server is crucial for running AI services efficiently and 
 - `fix_ip_addr.md`: Instructions for setting a fixed IP address. 
 - `gpu_driver_nvidia1`: Nvidia driver setting. Additional settings must be done for running nvidia container.
 - `gpu_driver_amd.sh`: AMD driver setting.
-
-
-
+- `amdgpu_fan.md`: AMD graphic card fan speed setting.
