@@ -10,7 +10,6 @@ Efficiently deploying and managing AI services is crucial for a functional AI de
 
 1. `ollama.md`: Deploy Ollama for running large language models (NVIDIA/AMD versions).
 2. `vectorDB.sh`: Set up Elasticsearch and ChromaDB for efficient data indexing and search.
-3. `ollama.py`: Python scripts demonstrating how to interact ollama.
 
 ## Usage
 
