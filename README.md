@@ -37,7 +37,7 @@ Before using this repository, ensure you have the following:
 - `setup/`: Server setup scripts
 - `docker/`: Docker configuration files
 - `models/`: Guides for setting up specific LLMs and AI tools
-- `tools/`: Configuration guides for additional development tools
+- (**coming soon**)`tools/`: Configuration guides for additional development tools
 
 ## Contributing
 
