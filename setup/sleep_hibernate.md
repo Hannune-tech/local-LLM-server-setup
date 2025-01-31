@@ -11,3 +11,7 @@
 
 ## Enable
 `sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target`
+
+
+## Verify change
+`sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target`
