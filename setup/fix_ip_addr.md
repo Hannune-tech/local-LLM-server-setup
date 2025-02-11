@@ -69,7 +69,7 @@ In my case I made LAN cable connection but unable to change it's ip address beca
 6. Apply the new configuration: `nmcli con up <your network interface>`
 7. Verify the new configuration: `ip addr show`
 
-### Method 2: Manual Configuration (Temporary)
+#### Method 2: Manual Configuration (Temporary)
 Use this method when Method 1 doesn't work. <br>
 **Note: This method does not set the IP address permanently and will revert after a system reboot.**
 ```
